@@ -28,10 +28,13 @@ Yi Ching and Yeen Shuang is getting married!
 
 <!-- Java Script -->
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
 <script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
 <script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
 <script type="text/javascript" src="scroll.js"></script>
@@ -146,43 +149,66 @@ Yi Ching and Yeen Shuang is getting married!
 		<div class="content-box">
 
 			<div class="text-center"><h1>Event Info</h1></div>
-      <div class="text-center"><h1>Coming soon</h1></div>
 
 			<div class="map-content">
 				<!--img class="map" src="images/map.png" alt="Map" /-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4466.068846391199!2d145.38142700603868!3d-37.672999939858116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad62cb5ecd9327f%3A0x8489d4a22144405d!2sYering+Station+Winery!5e0!3m2!1sen!2sau!4v1495350835926" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 			</div>
 
-			<!--div class="info-content">
-				<h2>Lord Hill Farms</h2>
-				<h3>Ceremony at 5:30</h3>
+			<div class="info-content">
+				<h2>Yering Station</h2>
+				<h3>Ceremony at 4:00</h3>
 				<h3>Dinner and dancing to follow</h3>
 
 				<div class="more-info">
-				<a class="info btn" id="getmore-info" href="#inline1" title="">More Event Info<span></span></a>
+				  <button type="button" class="info btn btn-lg" id="getmore-info" data-toggle="modal" data-target="#myModal">
+            More Wedding Info
+          </button>
 				</div>
 
-				<div style="display: none;">
-					<div id="inline1" style="width:600px;height:550px;overflow:auto;">
-					<p>The ceremony will begin at 5:30pm and will take place outside, weather permitting.  Dinner and dancing will follow shortly after.  Bring your party pants/dresses people, it’s going to be a good ole’ time. Dress is semiformal; bow ties and/or bolo ties are encouraged.</p>
-<div class="line-seperator"></div>
-<p>Lord Hill Farms is located in Snohomish, about 45 minutes north of Seattle.  Please allow between 45 and 60 minutes travel time to reach Lord Hill Farms if leaving from Seattle (it’s awkward being late to a wedding, isn’t it?). Ample parking will be available on site.</p>
-<p>Beer and Wine will be served at the reception by a licensed bartender. If you are over the age of 21 and wish to partake, please make sure to bring your ID with you.</p>
-<div class="line-seperator"></div>
-<p>If you are joining us from out of town, you may wish to book a hotel reservation.  Some hotels we can recommend that are located closer to the venue include:</p>
-<p>•	<a href="http://www.guesthouseintl.com" target="_blank">Guesthouse Inn &amp; Suites Monroe</a> ($)<br />
-•	<a href="http://hiltongardeninn3.hilton.com" target="_blank">Hilton Garden Inn Seattle/Bothell</a> ($$)<br />
-•	<a href="http://www.willowslodge.com/index.html" target="_blank">Willows Lodge Woodinville</a> ($$$)</p>
-<p>Many other lodging accommodations are available closer to downtown Seattle; we recommend you look for lodging there if you’re planning on exploring the city a bunch over the weekend.</p>
-<div class="line-seperator"></div>
-<p>Any questions, comments, concerns, playlist requests, or accommodation inquiries, feel free to contact Katie or Luke: <a href="mailto:katieplusluke@gmail.com">katieplusluke@gmail.com</a></p>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">More Event Details</h4>
+              </div>
+              <div class="modal-body">
+                <p>The ceremony will begin at 4:00pm and will take place outside, weather permitting.  Dinner and dancing will follow shortly after. <p>
+                <p>Dress code: FORMAL</p>
 
-					</div>
-				</div>
+                <div class="line-seperator"></div>
+
+                <p>Yering Station is located in Yarra Valley, about an hour East of Melbourne's central business district. Please allow approximately 60 minutes travel time to reach Yering Station if leaving from Melbourne. </p>
+                <p>Ample prarking will be available on site.</p>
+
+                <div class="line-seperator"></div>
+
+                <p>If you are joining us from out of town, you may wish to book a hotel reservation. We recommend the following as they are closer to the venue, these include:</p>
+                <p>
+                •	<a href="https://chateauyering.com.au/" target="_blank">Chateau Yering House Hotel</a> (42 Melba Hwy, Yering VIC 3770, +03 9237 3333)<br />
+                •	<a href="http://www.yarravalleylodge.com/" target="_blank">Yarra Valley Lodge</a> (2 Heritage Ave, Chirnside Park VIC 3116, +03 9760 3333)<br />
+                •	<a href="http://www.balgownieestate.com.au/" target="_blank">Balgownie Estate Resort</a> (1309 Melba Hwy, Yarra Glen VIC 3775, +03 9730 0700)</p>
+                <p>Many other lodging accommodations are available closer to downtown Seattle; we recommend you look for lodging there if you’re planning on exploring the city a bunch over the weekend.</p>
+                <div class="line-seperator"></div>
+                <p>Any questions, comments, concerns, playlist requests, or accommodation inquiries, feel free to contact Yi Ching
+                <a href="mailto:ching03007@hotmail.com">ching03007@hotmail.com</a> +61430744524
+                or Yeen Shuang: <a href="mailto:tiramisu88@hotmail.com">tiramisu88@hotmail.com</a> +61413129654</p>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 				<div class="get-directions">
-				<a href="http://goo.gl/maps/V1XY" target="_blank" class="directions btn">Driving Directions<span></span></a>
+          <a href="https://goo.gl/jTrgJt" target="_blank" class="info btn btn-lg">Driving Directions</a>
 				</div>
-			</div-->
+			</div>
 
 		</div>
 	</div>

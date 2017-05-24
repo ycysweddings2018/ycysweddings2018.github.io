@@ -594,14 +594,15 @@ ul#navigation li:hover {
 	height:311px;
 	padding-left:29px;
 }
-.info-content h2{
+.info-content h2 {
 	margin-left:0;
 	margin-bottom:30px;
 	color:rgb(248,191,84);
 }
-.info-content h3{
+.info-content h3 {
 	margin:0;
 	margin-bottom:16px;
+  color: white;
 }
 .more-info{
 	clear:both;
