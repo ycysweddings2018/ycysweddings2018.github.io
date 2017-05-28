@@ -296,7 +296,7 @@ body {
 
 
 .home {
-	background-color: rgb(171,221,198);
+	background-color: #FCE3CE;
 }
 
 .home .content-box{
@@ -321,7 +321,7 @@ body {
 
 
 .story {
-	background-color: rgb(230,230,230);
+	background-color: #FFF2B4;
 }
 
 .story .content-box{
@@ -421,7 +421,8 @@ body {
 .highlights h4 {
 	display:none;
   	position:absolute;
-  	background-color: rgb(230,230,230);
+  	background-color: #FFF2B4;
+    padding-top: 30px;
   	margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -453,7 +454,7 @@ body {
 
 
 .pictures {
-	background-color: rgb(252,252,252);
+	background-color: #9DD7AB;
 }
 
 .pictures .content-box{
@@ -577,12 +578,12 @@ body {
 
 
 
-/* EVENT INFO */
+/* Wedding INFO */
 
 
 
 .info {
-	background-color: rgb(220,79,83);
+	background-color: #DEF4F4;
 }
 
 .info .content-box{
@@ -694,10 +695,8 @@ body {
 
 /* WEDDING PARTY */
 
-
-
 .party {
-	background-color: rgb(248,202,105);
+	background-color: #ADB79A;
 }
 
 .party .content-box{
@@ -830,14 +829,10 @@ body {
 	background: url(images/partythumb-sprite.jpg) -714px 0;
 }
 
-
-
 /* RSVP */
 
-
-
 .rsvp {
-	background-color: rgb(0,138,160);
+	background-color: #E3D3E8;
 }
 
 .rsvp .content-box{
