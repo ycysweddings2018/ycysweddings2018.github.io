@@ -358,37 +358,73 @@ body {
 }
 
 .first {
+	background: url(images/j.png) no-repeat;
 	margin-left:100px;
 	margin-top:26px;
 }
 
 .second {
+	background: url(images/o.png) no-repeat;
 	margin-left:70px;
 	margin-top:26px;
 }
 
 .third {
+	background: url(images/u.png) no-repeat;
 	margin-left:50px;
 	margin-top:26px;
 }
 
 .fourth {
+	background: url(images/r.png) no-repeat;
 	margin-left:90px;
 	margin-top:26px;
 }
 
 .fifth {
+	background: url(images/n.png) no-repeat;
 	margin-left:50px;
 	margin-top:26px;
 }
 
 .sixth {
+	background: url(images/e.png) no-repeat;
 	margin-left:80px;
 	margin-top:26px;
 }
+
 .seventh {
+	background: url(images/y.png) no-repeat;
 	margin-left:20px;
 	margin-top:26px;
+}
+
+.first span {
+	background: url(images/j.png) no-repeat;
+}
+
+.second span {
+	background: url(images/o.png) no-repeat;
+}
+
+.third span {
+	background: url(images/u.png) no-repeat;
+}
+
+.fourth span {
+	background: url(images/r.png) no-repeat;
+}
+
+.fifth span {
+	background: url(images/n.png) no-repeat;
+}
+
+.sixth span {
+	background: url(images/e.png) no-repeat;
+}
+
+.seventh span {
+	background: url(images/y.png) no-repeat;
 }
 
 .heart {
@@ -397,7 +433,6 @@ body {
 	text-indent: -9999px;
 	width: 46px;
 	height: 44px;
-	background: url(images/heart.png) no-repeat;
     float:left;
     cursor: pointer;
 }
@@ -405,7 +440,6 @@ body {
 .heart span {
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
-	background: url(images/heart.png) no-repeat;
 	background-position: -46px 0;
 	opacity: 0;
 	filter:alpha(opacity=0);
