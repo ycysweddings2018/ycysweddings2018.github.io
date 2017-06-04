@@ -10,6 +10,7 @@ $(function() {
     positions = [],
     here = $(window).scrollTop(),
     collection = $('.slide');
+    console.log(collection);
 
     collection.each(function() {
       positions.push(parseInt($(this).offset()['top'],10));
@@ -37,35 +38,5 @@ $(function() {
       duration: 750
     });
     return false;
-  });
-});
-
-// Fancy box stuff
-$(document).ready(function() {
-	$("a[rel=story-gallery]").fancybox({
-		'titlePosition' 	: 'inside',
-		'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-			return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-    }
-  });
-
-  $("a[rel=guys-gallery]").fancybox({
-    'titlePosition' 	: 'inside',
-    'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-      return '<span id="fancybox-title-over">' + (title.length ? '' + title : '') + '</span>';
-    }
-  });
-
-  $("a[rel=girls-gallery]").fancybox({
-    'titlePosition' 	: 'inside',
-    'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-      return '<span id="fancybox-title-over">' + (title.length ? '' + title : '') + '</span>';
-    }
-  });
-
-  $("#getmore-info").fancybox({
-    'titlePosition'		: 'inside',
-    'transitionIn'		: 'none',
-    'transitionOut'		: 'none'
   });
 });
