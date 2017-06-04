@@ -7,7 +7,17 @@
          url('fonts/blanch_caps-webfont.svg#BlanchCapsRegular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'BlanchCapsInline';
+    src: url('fonts/blanch_caps_inline-webfont.eot');
+    src: url('fonts/blanch_caps_inline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/blanch_caps_inline-webfont.woff') format('woff'),
+         url('fonts/blanch_caps_inline-webfont.ttf') format('truetype'),
+         url('fonts/blanch_caps_inline-webfont.svg#BlanchCapsInline') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -26,9 +36,11 @@
 
 h1 {
 	padding:0;
-	font-family: 'BlanchCapsRegular', arial !important;
-	font-size:60px;
-	font-weight:normal;
+	font-family: 'BlanchCapsInline' !important;
+	font-size:160px !important;
+  margin-top: -10px !important;
+  margin-bottom: -30px !important;
+	font-weight:normal !important;
 
 }
 
@@ -314,6 +326,10 @@ body {
 	background: url(images/title-sprites.png) 0 0;
   margin-top: 25px;
 	margin-bottom:25px;
+}
+
+.story h1 {
+  color: rgb(225,86,97);
 }
 
 .story h2 {
