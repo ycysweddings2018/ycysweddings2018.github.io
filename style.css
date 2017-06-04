@@ -91,17 +91,8 @@ body {
   line-height:25px;
 }
 
-.content-box{
-	position:absolute;
-	top:50%;
-	left:50%;
-	width:900px;
-	margin-left:-450px;
-}
-
 .container {
 	padding-top:63px;
-
 }
 
 .slide {
@@ -226,16 +217,6 @@ body {
 	height:20px;
 	padding:13px 0 0 5px;
 }
-.luke-logo {
-	display:block;
-	position: relative;
-	text-indent: -9999px;
-	width: 23px;
-	height: 23px;
-	float:left;
-	margin:13px 0 15px 15px;
-
-}
 
 /* BOTTOM NAVIGATION */
 
@@ -297,8 +278,6 @@ body {
 
 /* HOME SLIDE */
 
-
-
 .home {
 	background-color: #FCE3CE;
 }
@@ -319,19 +298,11 @@ body {
 	background: url(images/kl-title.png) no-repeat;
 }
 
-
 /* OUR STORY */
-
-
 
 .story {
 	background-color: #FFF2B4;
 }
-
-.story .content-box{
-	height:460px;
-	margin-top:-260px;
-	}
 
 .story-title {
 	display:block;
@@ -353,12 +324,14 @@ body {
 
 .timeline {
 	position:relative;
-	display:block;
+  display:flex;
 	overflow:auto;
 	margin-top:40px;
 	height:290px;
+  justify-content:center;
+  align-items: center top;
 	background: url(images/arrow.png) no-repeat;
-	background-position: 0px 0px;
+	background-position: center top;
 }
 
 .first {
@@ -485,20 +458,11 @@ body {
 	line-height: 40px;
 }
 
-
-
 /* PICTURES SLIDE */
-
-
 
 .pictures {
 	background-color: #9DD7AB;
 }
-
-.pictures .content-box{
-	height:290px;
-	margin-top:-180px;
-	}
 
 .pictures-title {
 	display:block;
@@ -614,20 +578,11 @@ body {
 	background: url(images/pthumb-sprite.jpg) -918px 0;
 }
 
-
-
 /* Wedding INFO */
-
-
 
 .info {
 	background-color: #DEF4F4;
 }
-
-.info .content-box{
-	height:450px;
-	margin-top:-260px;
-	}
 
 .info-title {
 	display:block;
@@ -640,17 +595,6 @@ body {
 	margin-bottom:50px;
 }
 
-.map-content{
-	float:left;
-	width:451px;
-	height:311px;
-}
-.info-content{
-	float:left;
-	width:420px;
-	height:311px;
-	padding-left:29px;
-}
 .info-content h2 {
 	margin-left:0;
 	margin-bottom:30px;
@@ -736,11 +680,6 @@ body {
 .party {
 	background-color: #ADB79A;
 }
-
-.party .content-box{
-	height:350px;
-	margin-top:-210px;
-	}
 
 .party-title {
 	display:block;
@@ -872,11 +811,6 @@ body {
 .rsvp {
 	background-color: #E3D3E8;
 }
-
-.rsvp .content-box{
-	height:475px;
-	margin-top:-270px;
-	}
 
 .rsvp-title {
 	display:block;
