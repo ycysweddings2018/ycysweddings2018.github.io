@@ -40,3 +40,41 @@ $(function() {
     return false;
   });
 });
+
+$('#rsvp-now').submit(function rsvp(form) {
+  var params = {
+    AccountId: "095700778269",
+    RoleArn: "arn:aws:iam::095700778269:policy/ycysunauthpolicy",
+    IdentityPoolId: "us-west-2:496d1ed7-ba77-4922-ac01-880558f53e35"
+  }
+
+  console.log(form);
+
+  // set the Amazon Cognito region
+  AWS.config.region = 'us-west-2';
+  // initialize the Credentials object with our parameters
+  AWS.config.credentials = new AWS.CognitoIdentityCredentials(params);
+
+  var invitee = document.getElementById('invitee');
+  var plusone = document.getElementById('plusone');
+  var dietary_restrictions = document.getElementById('dietary_restrictions');
+
+  function invokeLambda( e ){
+    var lambda = new AWS.Lambda();
+
+    e.preventDefault();
+
+    lambda.invoke({
+      FunctionName: 'ycyswedding2018',
+      Payload: JSON.stringify({
+        invitee: invitee.value,
+        plusone: plusone.value,
+        dietary_restrictions: dietary_restrictions.value
+      })
+    }, function(err, data){
+      if(err) console.log(err);
+    });
+  };
+
+  return false;
+});
