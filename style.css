@@ -38,8 +38,8 @@ h1 {
 	padding:0;
 	font-family: 'BlanchCapsInline' !important;
 	font-size:160px !important;
-  margin-top: -10px !important;
-  margin-bottom: -30px !important;
+  margin-top: -30px !important;
+  margin-bottom: -40px !important;
 	font-weight:normal !important;
 
 }
@@ -610,6 +610,10 @@ body {
 	background-color: #DEF4F4;
 }
 
+.map {
+  padding-top: 20px;
+}
+
 .info-title {
 	display:block;
 	margin: auto;
@@ -621,18 +625,25 @@ body {
 	margin-bottom:50px;
 }
 
+.info h1 {
+  color: #496d6d;
+}
+
 .info-content h2 {
 	margin-left:0;
-	margin-bottom:30px;
-	color:rgb(248,191,84);
+	margin-bottom:20px;
+  font-size: 45px;
+	color:#496d6d;
 }
 .info-content h3 {
-	margin:0;
-	margin-bottom:16px;
-  color: white;
+  margin: 0px;
+  margin-bottom: -5px;
+  font-size: 40px;
+  color: #3c3737;
 }
 .more-info{
 	clear:both;
+  margin-top:20px;
 	width:420px;
 }
 #inline1 {
@@ -652,15 +663,17 @@ body {
 }
 .get-directions{
 	clear:both;
-	margin-top:20px;
+	margin-top:10px;
 	width:420px;
 }
 .btn{
+	background-color: #496d6d;
 	position:relative;
 	margin:0;
 	text-align:center;
+  font-color: white;
 	font-family: 'BlanchCapsRegular', arial;
-	font-size:55px;
+	font-size:30px !important;
 	font-weight:normal;
 	text-decoration:none;
 
@@ -678,16 +691,17 @@ body {
 	 -ms-transition-timing-function: linear, ease-in;
 }
 
-.info.btn{
+.info .btn{
 	padding: 10px 95px 10px 95px;
-	background-color:rgb(248,191,84);
-	color:#FFFFFF;
+	background-color:#496d6d;
+	color:#FFFFFF !important;
 }
 
-.info.btn:hover {
-	color: rgb(220,79,83);
+.info .btn:hover {
+	color: #496d6d !important;
 	background-color:#FFFFFF;
 }
+
 .directions.btn{
 	padding: 10px 79px 10px 79px;
 	background-color:rgb(248,191,84);
@@ -716,32 +730,23 @@ body {
 	background: url(images/title-sprites.png) 0 -150px;
 	margin-bottom:25px;
 }
+
+.party h1 {
+  color: #65493D;
+}
 .party h2{
 	text-align: center;
 	color: rgb(0,138,160);
 	text-shadow: rgb(0,138,160) 0 0 0;
 }
-.groomsmen{
-	display:block;
-	position:relative;
-	width:602px;
-	height:60px;
-	padding-top:60px;
-	margin-left:auto;
-	margin-right:auto;
-	left:0;
-	right:0;
+
+.party h3 {
+  font-size: 40px;
+  color: #65493D;
 }
-.bridesmaids{
-	display:block;
-	position:relative;
-	width:607px;
-	height:60px;
-	padding-top:15px;
-	margin-left:auto;
-	margin-right:auto;
-	left:0;
-	right:0;
+
+.party h3 > a {
+  color: #65493D;
 }
 
 .wp-title{
@@ -786,51 +791,6 @@ body {
 	filter:alpha(opacity=100);
 }
 
-.groomsmen .one span {
-	background: url(images/partythumb-sprite.jpg) -51px 0;
-}
-.groomsmen .two span {
-	background: url(images/partythumb-sprite.jpg) -102px 0;
-}
-.groomsmen .three span {
-	background: url(images/partythumb-sprite.jpg) -153px 0;
-}
-.groomsmen .four span {
-	background: url(images/partythumb-sprite.jpg) -204px 0;
-}
-.groomsmen .five span {
-	background: url(images/partythumb-sprite.jpg) -255px 0;
-}
-.groomsmen .six span {
-	background: url(images/partythumb-sprite.jpg) -306px 0;
-}
-.groomsmen .seven span {
-	background: url(images/partythumb-sprite.jpg) -357px 0;
-}
-
-
-.bridesmaids .one span {
-	background: url(images/partythumb-sprite.jpg) -408px 0;
-}
-.bridesmaids .two span {
-	background: url(images/partythumb-sprite.jpg) -459px 0;
-}
-.bridesmaids .three span {
-	background: url(images/partythumb-sprite.jpg) -510px 0;
-}
-.bridesmaids .four span {
-	background: url(images/partythumb-sprite.jpg) -561px 0;
-}
-.bridesmaids .five span {
-	background: url(images/partythumb-sprite.jpg) -612px 0;
-}
-.bridesmaids .six span {
-	background: url(images/partythumb-sprite.jpg) -663px 0;
-}
-.bridesmaids .seven span {
-	background: url(images/partythumb-sprite.jpg) -714px 0;
-}
-
 /* RSVP */
 
 .rsvp {
@@ -846,6 +806,10 @@ body {
 	height: 75px;
 	background: url(images/title-sprites.png) 0 -225px;
 	margin-bottom:25px;
+}
+
+.rsvp h1 {
+  color: #45415E;
 }
 
 .rsvp h2{
@@ -877,7 +841,7 @@ label {
 	font-family: 'BlanchCapsRegular', arial;
 	font-size:43px;
 	font-weight:normal;
-	color:#FFFFFF;
+	color:#45415E;
 	margin:0px 0px 0px 0;
 }
 
@@ -912,7 +876,6 @@ input {
 .submit-container {
 	position:relative;
 	width:205px;
-	height:240px;
 	margin-top:0px;
 	margin-bottom:0px;
 	margin-left:55px;
@@ -927,15 +890,14 @@ input {
 }
 .submit-btn{
 	position:relative;
-	padding: 5px 53px 5px 53px;
-	margin-top:20px;
+	padding: 0px 53px 0px 53px;
 	margin-left:0;
 	margin-right:0;
 	margin-bottom:0;
   width: 100%;
-	background-color:rgb(248,191,84);
+	background-color: #45415E;
 	font-family: 'BlanchCapsRegular', arial;
-	font-size:55px;
+	font-size:35px;
 	font-weight:normal;
 	color:#FFFFFF;
 	text-decoration:none;
@@ -957,7 +919,7 @@ input {
 }
 
 .submit-btn:hover {
-	color: rgb(248,191,84);
+	color: #45415E;
 	background-color:#FFFFFF;
 	border:0;
 }
