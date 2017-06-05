@@ -41,14 +41,12 @@ $(function() {
   });
 });
 
-$('#rsvp-now').submit(function rsvp(form) {
+function rsvp() {
   var params = {
     AccountId: "095700778269",
     RoleArn: "arn:aws:iam::095700778269:policy/ycysunauthpolicy",
     IdentityPoolId: "us-west-2:496d1ed7-ba77-4922-ac01-880558f53e35"
   }
-
-  console.log(form);
 
   // set the Amazon Cognito region
   AWS.config.region = 'us-west-2';
@@ -77,4 +75,12 @@ $('#rsvp-now').submit(function rsvp(form) {
   };
 
   return false;
-});
+}
+
+var el = document.getElementById('rsvpnow');
+if(el) {
+  el.addEventListener('submit', rsvp());
+}
+else {
+  console.log("bad");
+}
