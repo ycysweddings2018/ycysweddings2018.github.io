@@ -225,7 +225,7 @@ Yi Ching and Yeen Shuang is getting married!
         <h1>RSVP</h1>
       </div>
 
-			<form name="rsvp-now" class="form-horizontal" onsubmit="return rsvp(this)">
+			<form name="rsvp-now" class="form-horizontal" action="https://formspree.io/ching03007@gmail.com" method="POST">
         <div class="form-group">
           <label for="name" class="col-sm-6 control-label">Your Full Name </label>
           <div class="col-sm-6">
@@ -244,10 +244,12 @@ Yi Ching and Yeen Shuang is getting married!
             <textarea type="text" name="dietary_restrictions" id="attending-form" row=2 ></textarea>
           </div>
         </div>
+        <input type="hidden" name="_subject" value="I'm attending!" />
+        <input type="hidden" name="_cc" value="tiramisu88@gmail.com" />
         <div class="submit-container col-sm-11">
 
           <div class="submit">
-            <input class="submit-btn" type="submit" name='submit' value="submit" />
+            <input class="submit-btn" type="submit" name='submit' value="Send" />
           </div>
 
         </div>
