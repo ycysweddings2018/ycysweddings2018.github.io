@@ -40,8 +40,8 @@ h1 {
   font-family: 'BlanchCapsInline' ;
   font-weight:normal;
   font-size: 12vw;
-  margin-top: -20px;
-  margin-bottom: -20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 h2 {
@@ -146,6 +146,23 @@ html, body {
 @media (min-width : 768px) {
   .form-horizontal .control-label {
     padding-top: 0px !important;
+  }
+
+  .home-small {
+    display: none;
+  }
+}
+
+@media (max-width : 768px) {
+  .home-title > h1 {
+    font-size: 90px;
+  }
+
+  .home-big {
+    display: none;
+  }
+  .home-small {
+    font-size: 30px;
   }
 }
 
@@ -428,6 +445,26 @@ html, body {
 
 /* Wedding INFO */
 
+@media (min-width : 1200px) {
+  .info-content-small {
+    display: none;
+  }
+}
+
+@media (max-width : 1200px) {
+  .map, .info-content-big {
+    display: none;
+  }
+
+  .info-content-small > .text-center > h2 {
+    margin-top: 20px;
+    margin-bottom:40px;
+  }
+  .info-content-small h3 {
+    margin-bottom: -5px;
+  }
+}
+
 .info {
 	background-color: #DEF4F4;
 }
@@ -451,22 +488,34 @@ html, body {
   color: #496d6d;
 }
 
-.info-content h2 {
+.info-content-big h2 {
 	margin-left:0;
 	margin-bottom:20px;
   font-size: 45px;
 	color:#496d6d;
 }
-.info-content h3 {
+.info-content-big h3 {
   margin: 0px;
   margin-bottom: -5px;
   font-size: 40px;
   color: #3c3737;
 }
+
+.info-content-small h2 {
+	margin-left:0;
+	margin-bottom:20px;
+  font-size: 45px;
+	color:#496d6d;
+}
+.info-content-small h3 {
+  margin: 0px;
+  margin-bottom: -5px;
+  font-size: 40px;
+  color: #3c3737;
+}
+
 .more-info{
-	clear:both;
   margin-top:20px;
-	width:420px;
 }
 #inline1 {
 	padding:25px;
@@ -484,9 +533,9 @@ html, body {
 	background:#bbbbbb;
 }
 .get-directions{
-	clear:both;
 	margin-top:10px;
-	width:420px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn{
 	background-color: #496d6d;
@@ -551,6 +600,18 @@ html, body {
   color: #65493D;
 }
 
+@media (max-width : 768px) {
+  .party h3 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .party h3 {
+    font-size: 35px;
+  }
+}
+
 .party h3 > a {
   color: #65493D;
 }
@@ -567,23 +628,20 @@ html, body {
 
 .rsvp-now{
 	display:block;
-	margin:0 auto;
-	margin-top:30px;
-	width:780px;
-	height:240px;
 }
 
-form {
-  margin-top: 30px;
+.form-group {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 label {
-	text-align: right !important;
+	text-align: right;
 	font-family: 'BlanchCapsRegular', arial;
-	font-size:43px;
+	font-size:38px;
 	font-weight:normal;
 	color:#45415E;
-	margin:0px 0px 0px 0;
+  margin-top: -5px;
 }
 
 textarea {
@@ -598,7 +656,7 @@ input {
 
 #name-form, #guest-form, #attending-form {
 	width:300px;
-	font-size:33px;
+	font-size:30px;
 	color:#4a4a4a;
 }
 
@@ -610,7 +668,6 @@ input {
 
 .submit-btn{
 	position:relative;
-	padding: 0px 53px 0px 53px;
 	margin-left:0;
 	margin-right:0;
 	margin-bottom:0;
