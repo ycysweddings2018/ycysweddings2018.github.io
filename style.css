@@ -132,13 +132,23 @@ html, body {
     padding-right: 0 !important;
   }
 
+  .navbar-toggle {
+    margin-top: 13px;
+  }
+
   .navbar-nav {
     margin-top: 0px !important;
     width: 100%;
   }
 
   .navbar-nav li {
+    display: block !important;
     margin: 0px !important;
+  }
+
+  .nav .navbar-nav {
+    float: none;
+    vertical-align: top;
   }
 
 }
