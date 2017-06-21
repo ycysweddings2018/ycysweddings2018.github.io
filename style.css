@@ -287,6 +287,12 @@ html, body {
   }
 }
 
+@media (max-width: 469px) {
+  .too-long > h4 {
+    font-size: 27px;
+  }
+}
+
 @media (max-width : 991px) {
   .story-big {
     display: none;
@@ -296,9 +302,7 @@ html, body {
     font-size: 5vw;
   }
 
-  .too-long > h4 {
-    font-size: 27px;
-  }
+
 
   .nav-tabs>li>a {
     border: 0px;
