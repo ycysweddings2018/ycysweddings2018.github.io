@@ -153,6 +153,15 @@ html, body {
 
 }
 
+@media (min-width: 1570px) {
+  .home-big, .home-date {
+    font-size: 200px;
+  }
+  .home-bible {
+    font-size: 60px !important;
+  }
+}
+
 @media (min-width : 768px) {
   .form-horizontal .control-label {
     padding-top: 0px !important;
@@ -662,6 +671,19 @@ html, body {
 .highlights h4 span{
 	font-size: 40px;
 	line-height: 40px;
+}
+
+/* Save the date */
+@media (min-width : 680px) {
+  .journey-small {
+    display: none;
+  }
+}
+
+@media (max-width : 680px) {
+  .journey-big {
+    display: none;
+  }
 }
 
 /* Wedding INFO */
