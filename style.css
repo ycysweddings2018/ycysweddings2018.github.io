@@ -288,6 +288,10 @@ html, body {
 	background: url(images/kl-title.png) no-repeat;
 }
 
+.home-bible {
+  font-family: 'BlanchCapsRegular', arial;
+  color: #FFF2B4;
+}
 /* OUR STORY */
 
 @media (min-width : 991px) {
